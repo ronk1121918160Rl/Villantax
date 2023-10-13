@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Villantax Factura</title>
+  <link rel="stylesheet" href="./style_factura.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slide Navbar</title>
+	<link rel="stylesheet" type="text/css" href="slide navbar style.css">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<div class="main">  	
+		<input type="checkbox" id="chk" aria-hidden="true">
+
+			<div class="signup">
+				<form id="login-form" class="form" action= "insert_update_prvdrs.php" method="post">
+					}<div class="title">
+					</div>
+					<div class="info">
+					 
+						<label for="chk" aria-hidden="true">Detalle Cliente</label>
+					<div class="form-container">
+						<div class="form-group">
+							<input type="text" maxlength="10" class="form-input" id="id_nit" name="id_nit" placeholder="Id / NIT " required/>
+						  
+							<span class="form-line"></span>
+						</div>
+						<button name="cargar_cliente" type="submit" href="/.php">Cargar </button>	
+						
+						<label for="chk" aria-hidden="true">Detalle Producto</label>
+						<div class="form-group">
+							<input type="text" class="form-input"  name="idproducto" placeholder="Codigo" maxlength="35" required/>
+						   
+							<span class="form-line"></span>
+						</div>
+
+						<div class="form-group">
+							<input type="text" class="form-input"  name="cant" placeholder="Cantidad" maxlength="10" required/>
+							
+							<span class="form-line"></span>
+						</div>
+
+				
+						<button name="cargar_producto" type="submit" href="/.php">Cargar </button>	
+
+					</form>
+					</div>
+					
+					</div>
+
+				  </form>
+			</div>
+
+			<div class="login">
+				<form id="login-form" class="form" action=".php" method="post">
+					<label for="chk" aria-hidden="true">Observaciones</label>
+					<input type="text" maxlength="10" class="form-input" id="obs" name="obs" placeholder="Escribir observacion(es)" required/>
+					<button type="submit" href="/.php">Cargar</button>
+			</div>
+			
+	</div>
+
+	<div class="main2">  
+		<form id="login-form" class="form" action=".php" method="post">
+			<label for="chk" aria-hidden="true">Factura</label>
+			<br>
+			<!-- <br> aparecer los datos del clientes con el id en detalle de cliente-->
+			<br>
+			<br>
+			<!-- <br> aparecer una tabla en la que se vallan ingresando los datos del detalle del producto -->
+			<br>
+			<br>
+			<!-- <br> aparecer un cuadro para colocar el descuento y se aplique al total de la factura -->
+			<!-- <br> aparecer un cuadro con el total del valor de la factura -->
+			<br>
+			<button type="submit" href="/.php">Imprimir</button>
+		</form>
+	</div>
+</body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>
